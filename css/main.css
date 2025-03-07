@@ -1,0 +1,11 @@
+.main-wrapper {
+}
+
+.main-header {
+    height: 30vh;
+}
+
+#map {
+    height: 70vh;
+    width: 100%;
+}
