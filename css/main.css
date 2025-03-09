@@ -69,6 +69,30 @@
     background-color: white;
     padding-top: 24px;
     padding-bottom: 24px;
+    border-radius: 16px;
+}
+
+.ip-address-info-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.ip-address-info-item:last-child {
+    margin-bottom: 0;
+}
+
+.ip-address-info-item-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2C2C2C77;
+    font-weight: 700;
+}
+
+.ip-address-info-item-value {
+    font-size: 24px;
+    color: var(--black);
+    font-weight: 600;
 }
 
 #map {
