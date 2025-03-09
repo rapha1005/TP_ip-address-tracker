@@ -1,4 +1,13 @@
+:root {
+    /* font-family: "Rubik", sans-serif; */
+    --ff-rubik: "Rubik", sans-serif;
+
+    --white: #FFF;
+    --black: #000;
+}
+
 .main-wrapper {
+    font-family: var(--ff-rubik);
 }
 
 .main-header {
@@ -21,10 +30,32 @@
 .main-header h1 {
     margin-top: 0;
     margin-bottom: 24px;
+    color: var(--white);
+    font-size: 26px;
 }
 
 .ip-address-form {
     margin-bottom: 24px;
+    position: relative;
+}
+
+.ip-address-form input {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--black);
+}
+
+.ip-address-form button {
+    position: absolute;
+    height: 58px;
+    width: 58px;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ip-address-info {
