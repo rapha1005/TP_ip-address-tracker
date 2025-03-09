@@ -11,27 +11,28 @@
 }
 
 .main-header {
-    min-height: 30vh;
     background-image: url("../assets/pattern-bg-mobile.png");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    padding-top: 24px;
+    min-height: 30vh;
     padding-bottom: 24px;
+    padding-top: 24px;
+    position: relative;
+    text-align: center;
 }
 
 .main-header-inner-wrapper {
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
 }
 
 .main-header h1 {
-    margin-top: 0;
-    margin-bottom: 24px;
     color: var(--white);
     font-size: 26px;
+    margin-bottom: 24px;
+    margin-top: 0;
 }
 
 .ip-address-form {
@@ -40,36 +41,39 @@
 }
 
 .ip-address-form input {
-    width: 100%;
-    font-size: 18px;
-    padding: 16px;
     border-radius: 16px;
     border: 1px solid var(--black);
+    font-size: 18px;
+    padding: 16px;
+    width: 100%;
 }
 
 .ip-address-form button {
-    position: absolute;
+    align-items: center;
+    background-color: var(--black);
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
     height: 100%;
-    width: 60px;
+    justify-content: center;
+    position: absolute;
     right: 0;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: var(--black);
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    cursor: pointer;
+    width: 60px;
 }
 
 .ip-address-info {
-    list-style-type: none;
-    padding-left: 0;
     background-color: white;
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-radius: 16px;
+    list-style-type: none;
+    padding-bottom: 24px;
+    padding-left: 0;
+    padding-top: 24px;
+    position: absolute;
+    width: 90%;
+    z-index: 10;
 }
 
 .ip-address-info-item {
@@ -83,19 +87,20 @@
 }
 
 .ip-address-info-item-title {
-    font-size: 12px;
-    text-transform: uppercase;
     color: #2C2C2C77;
+    font-size: 12px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .ip-address-info-item-value {
-    font-size: 24px;
     color: var(--black);
+    font-size: 24px;
     font-weight: 600;
 }
 
 #map {
     height: 70vh;
     width: 100%;
+    z-index: 1;
 }
