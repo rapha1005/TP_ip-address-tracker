@@ -21,6 +21,8 @@ async function getIpInfo() {
   $ipAddressLocation.textContent = `${ipInfo.location.region} ${ipInfo.location.country}`;
   $ipAddressTimezone.textContent = `UTC ${ipInfo.location.timezone}`;
   $ipAddressIsp.textContent = ipInfo.isp;
+
+  map.setView([ipInfo.location.lat, ipInfo.location.lng]);
 }
 
 $ipAddressForm.addEventListener("click", function (e) {
